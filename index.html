@@ -154,14 +154,14 @@
 
         // DINDING KIRI
         const leftWall = new THREE.Mesh(new THREE.PlaneGeometry(D, H), matWall);
-        leftWall.rotation.y = -Math.PI / 2;
-        leftWall.position.set(-W / 2, H / 2, 0);
+        leftWall.rotation.y = Math.PI / 2;
+        leftWall.position.set(W / 2, H / 2, 0);
         scene.add(leftWall);
 
         // DINDING KANAN
         const rightWall = new THREE.Mesh(new THREE.PlaneGeometry(D, H), matWall);
-        rightWall.rotation.y = Math.PI / 2;
-        rightWall.position.set(W / 2, H / 2, 0);
+        rightWall.rotation.y = -Math.PI / 2;
+        rightWall.position.set(-W / 2, H / 2, 0);
         scene.add(rightWall);
 
         // === 5) Render Loop ===
